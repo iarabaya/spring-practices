@@ -1,5 +1,6 @@
 package com.example.learningspring.util;
 
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.text.DateFormat;
@@ -7,6 +8,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Component
 public class DateUtils {
     public Date createDateFromDateString( String dateString){
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
